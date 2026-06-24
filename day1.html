@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Day 1 - Autoencoders, Compression &amp; Dimensionality Reduction</title>
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+      <div class="logo me-auto">
+        <a href="index.html">
+          <img src="assets/img/kaust-academy-logo.png" alt="KAUST Academy">
+        </a>
+      </div>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="day1.html">Day 1</a></li>
+          <li><a href="day2.html">Day 2</a></li>
+          <li><a href="day3.html">Day 3</a></li>
+          <li><a href="day4.html">Day 4</a></li>
+          <li><a href="day5.html">Day 5</a></li>
+          <li><a href="extra.html">Extra</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="breadcrumbs animate-up">
+      <div class="container">
+        <h2>Day 1: Autoencoders, Compression &amp; Dimensionality Reduction</h2>
+        <p>Compress data, reduce dimensionality, and denoise images using autoencoders and classic transforms.</p>
+      </div>
+    </div>
+
+    <div class="container mb-5 animate-up delay-100">
+      <div class="table-container">
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th scope="col" style="width: 25%">Topic</th>
+              <th scope="col">Description &amp; Objectives</th>
+              <th scope="col" style="width: 20%; text-align: center;">Resource</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Autoencoders &amp; Unsupervised Representation Learning</strong></td>
+              <td>Encoder-decoder architectures for data compression, dimensionality reduction, and image denoising.</td>
+              <td class="text-center">
+                <a href="./Slides/Day1.pdf" class="table-btn" target="_blank" rel="noopener">PDF</a>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Lab: Autoencoder on MNIST</strong></td>
+              <td>Build an autoencoder to compress and reconstruct MNIST digits.</td>
+              <td class="text-center">
+                <a href="https://colab.research.google.com/github/KAUST-Academy/2026_YASREF_Generative_Deep_Learning/blob/main/Labs/Day_1/Image_Generation_AE_MNIST.ipynb"
+                  class="table-btn">Colab</a>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Lab: Variational Autoencoder (Anime Faces)</strong></td>
+              <td>Train a VAE to learn a latent space and generate new anime faces.</td>
+              <td class="text-center">
+                <a href="https://colab.research.google.com/github/KAUST-Academy/2026_YASREF_Generative_Deep_Learning/blob/main/Labs/Day_1/Image_Generation_VAE_ANIME.ipynb"
+                  class="table-btn">Colab</a>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Lab: Linear Autoencoder (PyTorch / MNIST)</strong></td>
+              <td>Implement a simple linear autoencoder in PyTorch for dimensionality reduction.</td>
+              <td class="text-center">
+                <a href="https://colab.research.google.com/github/KAUST-Academy/2026_YASREF_Generative_Deep_Learning/blob/main/Labs/Day_1/Pytorch_Linear_NN_MNIST_AutoEncoder.ipynb"
+                  class="table-btn">Colab</a>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Lab: DCT Image Compression (NumPy)</strong></td>
+              <td>Explore the discrete cosine transform for classic image compression.</td>
+              <td class="text-center">
+                <a href="https://colab.research.google.com/github/KAUST-Academy/2026_YASREF_Generative_Deep_Learning/blob/main/Labs/Day_1/DCT_Compression_Numpy.ipynb"
+                  class="table-btn">Colab</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script>
+    AOS.init();
+
+    const on = (type, el, listener, all = false) => {
+      let selectEl = document.querySelector(el);
+      if (selectEl) {
+        selectEl.addEventListener(type, listener);
+      }
+    }
+
+    on('click', '.mobile-nav-toggle', function (e) {
+      document.querySelector('#navbar').classList.toggle('navbar-mobile')
+      this.classList.toggle('bi-list')
+      this.classList.toggle('bi-x')
+    })
+  </script>
+</body>
+
+</html>

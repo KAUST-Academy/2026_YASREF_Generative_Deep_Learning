@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Day 5 - Advanced Image Generation, VLMs &amp; Visual Question Answering</title>
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+      <div class="logo me-auto">
+        <a href="index.html">
+          <img src="assets/img/kaust-academy-logo.png" alt="KAUST Academy">
+        </a>
+      </div>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="day1.html">Day 1</a></li>
+          <li><a href="day2.html">Day 2</a></li>
+          <li><a href="day3.html">Day 3</a></li>
+          <li><a href="day4.html">Day 4</a></li>
+          <li><a class="active" href="day5.html">Day 5</a></li>
+          <li><a href="extra.html">Extra</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="breadcrumbs animate-up">
+      <div class="container">
+        <h2>Day 5: Advanced Image Generation, VLMs &amp; Visual Question Answering</h2>
+        <p>Latent/Stable Diffusion, synthetic data generation, and vision-language models for visual question answering.</p>
+      </div>
+    </div>
+
+    <div class="container mb-5 animate-up delay-100">
+      <div class="table-container">
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th scope="col" style="width: 25%">Topic</th>
+              <th scope="col">Description &amp; Objectives</th>
+              <th scope="col" style="width: 20%; text-align: center;">Resource</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Advanced Image Generation Models</strong></td>
+              <td>Latent-space (Stable) Diffusion, text-conditioning, classifier-free guidance, and vision-language models.</td>
+              <td class="text-center">
+                <a href="./Slides/Day5.pdf" class="table-btn" target="_blank" rel="noopener">PDF</a>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Lab: Stable Diffusion &amp; Classifier-Free Guidance</strong></td>
+              <td>Generate images with latent/Stable Diffusion and classifier-free guidance.</td>
+              <td class="text-center">
+                <a href="https://colab.research.google.com/github/KAUST-Academy/2026_YASREF_Generative_Deep_Learning/blob/main/Labs/Day_5/Stable_Diffusion_Latent_Diffusion_Models_Classifer_Free_Guidance.ipynb"
+                  class="table-btn">Colab</a>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Lab: Vision Large Language Model (from scratch)</strong></td>
+              <td>Connect a vision encoder to an LLM for image understanding and visual question answering.</td>
+              <td class="text-center">
+                <a href="https://colab.research.google.com/github/KAUST-Academy/2026_YASREF_Generative_Deep_Learning/blob/main/Labs/Day_5/VLLM.ipynb"
+                  class="table-btn">Colab</a>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Lab: Transformer Image Captioning</strong></td>
+              <td>Generate natural-language captions for images with a transformer model.</td>
+              <td class="text-center">
+                <a href="https://colab.research.google.com/github/KAUST-Academy/2026_YASREF_Generative_Deep_Learning/blob/main/Labs/Day_5/Transformer_image_captioning.ipynb"
+                  class="table-btn">Colab</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script>
+    AOS.init();
+
+    const on = (type, el, listener, all = false) => {
+      let selectEl = document.querySelector(el);
+      if (selectEl) {
+        selectEl.addEventListener(type, listener);
+      }
+    }
+
+    on('click', '.mobile-nav-toggle', function (e) {
+      document.querySelector('#navbar').classList.toggle('navbar-mobile')
+      this.classList.toggle('bi-list')
+      this.classList.toggle('bi-x')
+    })
+  </script>
+</body>
+
+</html>

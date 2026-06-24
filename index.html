@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>KAUST Academy - Generative Deep Learning Training Program</title>
+
+  <!-- CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/img/kaust-academy-logo.png" alt="KAUST Academy">
+        </a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="day1.html">Day 1</a></li>
+          <li><a href="day2.html">Day 2</a></li>
+          <li><a href="day3.html">Day 3</a></li>
+          <li><a href="day4.html">Day 4</a></li>
+          <li><a href="day5.html">Day 5</a></li>
+          <li><a href="extra.html">Extra</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <!-- Confetti shapes -->
+    <div class="hero-confetti">
+      <div class="confetti-shape confetti-1"></div>
+      <div class="confetti-shape confetti-2"></div>
+      <div class="confetti-shape confetti-3"></div>
+      <div class="confetti-shape confetti-4"></div>
+      <div class="confetti-shape confetti-5"></div>
+      <div class="confetti-shape confetti-6"></div>
+      <div class="confetti-shape confetti-7"></div>
+      <div class="confetti-shape confetti-8"></div>
+      <div class="confetti-shape confetti-9"></div>
+      <div class="confetti-shape confetti-10"></div>
+      <div class="confetti-shape confetti-11"></div>
+      <div class="confetti-shape confetti-12"></div>
+    </div>
+    <div class="container text-center animate-up">
+      <h1><span>Generative Deep Learning</span></h1>
+      <h2 class="animate-up delay-100">A five-day program by KAUST Academy on creating new data with AI models.<br>All slide decks and hands-on labs are available here.</h2>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <section id="features" class="features" style="padding: 60px 0;">
+      <div class="container">
+
+        <div class="section-title text-center mb-5 animate-up">
+          <p style="color: var(--primary-red); font-weight: bold; letter-spacing: 1px;">COURSE SCHEDULE</p>
+          <h3>Daily Breakdown</h3>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4 animate-up delay-100">
+            <div class="icon-box w-100">
+              <i class="ri-stack-line"></i>
+              <h3><a href="day1.html">Day 1: Autoencoders, Compression &amp; Dimensionality Reduction</a></h3>
+              <p>Data compression, dimensionality reduction, and image denoising with autoencoders</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4 animate-up delay-200">
+            <div class="icon-box w-100">
+              <i class="ri-sword-line"></i>
+              <h3><a href="day2.html">Day 2: Generative Adversarial Networks</a></h3>
+              <p>GAN architecture, training dynamics, and conditional image generation</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4 animate-up delay-300">
+            <div class="icon-box w-100">
+              <i class="ri-drop-line"></i>
+              <h3><a href="day3.html">Day 3: Diffusion Models</a></h3>
+              <p>Forward and reverse diffusion, the engine behind modern image generation</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4 animate-up delay-100">
+            <div class="icon-box w-100">
+              <i class="ri-links-line"></i>
+              <h3><a href="day4.html">Day 4: Self-Supervised, Contrastive Learning &amp; LLM Fine-Tuning</a></h3>
+              <p>Contrastive representation learning and training/fine-tuning large language models</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4 animate-up delay-200">
+            <div class="icon-box w-100">
+              <i class="ri-image-2-line"></i>
+              <h3><a href="day5.html">Day 5: Advanced Image Generation, VLMs &amp; Visual Question Answering</a></h3>
+              <p>Stable Diffusion, synthetic data generation, and vision-language models for VQA</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <div class="container d-md-flex py-4">
+      <div class="me-md-auto text-center w-100">
+        <div class="copyright">
+          &copy; Copyright <strong><span>KAUST Academy</span></strong>. All Rights Reserved
+        </div>
+        <div class="license" style="font-size: 13px; margin-top: 8px; color: #555;">
+          Recording and uploading lectures online is not permitted.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <script>
+    AOS.init();
+
+    const on = (type, el, listener, all = false) => {
+      let selectEl = document.querySelector(el);
+      if (selectEl) {
+        selectEl.addEventListener(type, listener);
+      }
+    }
+
+    on('click', '.mobile-nav-toggle', function (e) {
+      document.querySelector('#navbar').classList.toggle('navbar-mobile')
+      this.classList.toggle('bi-list')
+      this.classList.toggle('bi-x')
+    })
+  </script>
+
+</body>
+
+</html>
